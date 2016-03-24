@@ -8,7 +8,7 @@ module.exports = function(alignX, alignY) {
 	var offsetX = 0.5 - alignX;
 	var offsetY = 0.5 - alignY;
 	if(!geom) {
-		console.log('NEW QUAD!', alignX, alignY);
+		// console.log('NEW QUAD!', alignX, alignY);
 		geom = new THREE.PlaneGeometry(1, 1, 1, 1);
 		geom.vertices.forEach(function(vertex) {
 			vertex.x += offsetX;
